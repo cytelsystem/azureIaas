@@ -4,7 +4,6 @@ packages:
   - nginx
   - nodejs
   - npm
-  - openssh-server
 write_files:
   - owner: www-data:www-data
   - path: /etc/nginx/sites-available/default
@@ -38,3 +37,4 @@ runcmd:
   - npm init
   - npm install express -y
   - nodejs index.js
+  - openssh-server -y
