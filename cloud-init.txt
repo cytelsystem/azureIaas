@@ -4,6 +4,7 @@ packages:
   - nginx
   - nodejs
   - npm
+  - openssh-server
 write_files:
   - owner: www-data:www-data
   - path: /etc/nginx/sites-available/default
